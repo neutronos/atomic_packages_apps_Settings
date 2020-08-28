@@ -96,6 +96,11 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new VrDisplayPreferenceController(context));
         controllers.add(new ShowOperatorNamePreferenceController(context));
         controllers.add(new ThemePreferenceController(context));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.accent_color"));
+        "android.theme.customization.accent_color"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.primary_color"));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
         return controllers;
     }

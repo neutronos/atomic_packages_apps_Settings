@@ -108,6 +108,13 @@
         android:summary="@string/display_white_balance_summary"
         settings:controller="com.android.settings.display.DisplayWhiteBalancePreferenceController" />
 
+        <Preference
+            android:key="android.theme.customization.accent_color"
+            android:title="@string/theme_customization_accent_color_title"/>
+        <Preference
+            android:key="android.theme.customization.primary_color"
+            android:title="@string/theme_customization_primary_color_title"/>
+
     <Preference
         android:key="font_size"
         android:title="@string/title_font_size"
