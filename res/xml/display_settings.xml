@@ -108,12 +108,18 @@
         android:summary="@string/display_white_balance_summary"
         settings:controller="com.android.settings.display.DisplayWhiteBalancePreferenceController" />
 
-        <Preference
+    <PreferenceCategory
+        android:key="theme_customization_category"
+        android:title="@string/theme_customization_category"
+        android:order="1200"> <!-- Incremented by 100 from last order (i.e. 1100) -->
+
+        <ListPreference
             android:key="android.theme.customization.accent_color"
             android:title="@string/theme_customization_accent_color_title"/>
-        <Preference
+        <ListPreference
             android:key="android.theme.customization.primary_color"
             android:title="@string/theme_customization_primary_color_title"/>
+    </PreferenceCategory>
 
     <Preference
         android:key="font_size"
