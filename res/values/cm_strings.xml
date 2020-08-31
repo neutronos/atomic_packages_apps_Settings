@@ -193,4 +193,7 @@
     <!-- Primary color -->
     <string name="theme_customization_primary_color_title">Primary color</string>
     <string name="theme_customization_accent_color_title">Accent color</string>
+      <string name="theme_customization_font_title">Font</string>
+      <string name="theme_customization_icon_shape_title">Icon shape</string>
+     
 </resources>
