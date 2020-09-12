@@ -42,7 +42,6 @@ public class NeutronVersionDetailPreferenceController extends BasePreferenceCont
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
     private static final String KEY_NEUTRON_VERSION_PROP = "ro.neutron.version";
-    private static final String KEY_NEUTRON_BUILDTYPE_PROP = "ro.neutron.releasetype";
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
 
@@ -63,7 +62,7 @@ public class NeutronVersionDetailPreferenceController extends BasePreferenceCont
     @Override
     public CharSequence getSummary() {
         return SystemProperties.get(KEY_NEUTRON_VERSION_PROP,
-                mContext.getString(R.string.unknown)) + " | " + SystemProperties.get(KEY_NEUTRON_BUILDTYPE_PROP, mContext.getString(R.string.unknown));
+                mContext.getString(R.string.unknown));
     }
 
     @Override
