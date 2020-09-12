@@ -35,9 +35,9 @@ import com.android.settings.core.BasePreferenceController;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedLockUtilsInternal;
 
-public class CherishVersionDetailPreferenceController extends BasePreferenceController {
+public class NeutronVersionDetailPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "CherishVersionDialogCtrl";
+    private static final String TAG = "NeutronVersionDialogCtrl";
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
@@ -49,7 +49,7 @@ public class CherishVersionDetailPreferenceController extends BasePreferenceCont
     private RestrictedLockUtils.EnforcedAdmin mFunDisallowedAdmin;
     private boolean mFunDisallowedBySystem;
 
-    public CherishVersionDetailPreferenceController(Context context, String key) {
+    public NeutronVersionDetailPreferenceController(Context context, String key) {
         super(context, key);
         mUserManager = (UserManager) mContext.getSystemService(Context.USER_SERVICE);
         initializeAdminPermissions();
