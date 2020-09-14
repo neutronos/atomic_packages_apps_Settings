@@ -255,7 +255,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 KEY_TIME_SINCE_LAST_FULL_CHARGE);
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.battery_footer_summary);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
-
         restartBatteryInfoLoader();
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
@@ -356,7 +355,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 mBatteryUtils.calculateScreenUsageTime(mStatsHelper), false));
         mCurrentBatteryCapacity.setSubtitle(parseBatterymAhText(mBatCurCap));
         mDesignedBatteryCapacity.setSubtitle(parseBatterymAhText(mBatDesCap));
-        updateHeaderPreference(batteryInfo);
         mBatteryTempPref.setSummary(BatteryInfo.batteryTemp+" "+Character.toString ((char) 176) + "C");
     }
 
