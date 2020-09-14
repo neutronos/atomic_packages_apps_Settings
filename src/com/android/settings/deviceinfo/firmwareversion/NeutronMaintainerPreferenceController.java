@@ -28,7 +28,6 @@ import com.android.settings.core.BasePreferenceController;
 public class NeutronMaintainerPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "NeutronMaintainerPreferenceController";
-    private static final String ROM_PROPERTY = "ro.neutron.maintainer";
 
     public NeutronMaintainerPreferenceController(Context context, String key) {
         super(context, key);
@@ -39,8 +38,7 @@ public class NeutronMaintainerPreferenceController extends BasePreferenceControl
     }
 
     public CharSequence getSummary() {
-        String rom = SystemProperties.get(ROM_PROPERTY,
-                this.mContext.getString(R.string.device_info_default));
-        return rom;
+        String maintainer = mContext.getResources().getString(R.string.neutron_maintainer);
+        return maintainer;
     }
 }
