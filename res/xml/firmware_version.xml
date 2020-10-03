@@ -21,10 +21,10 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- PixysOS logo -->
+    <!-- Neutron logo -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="arrow_logo"
-        android:layout="@layout/pixys_logo"
+        android:layout="@layout/neutron_logo"
         android:selectable="false"/>
 
     <!-- PixysOS version -->
