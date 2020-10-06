@@ -35,13 +35,13 @@ import com.android.settings.core.BasePreferenceController;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedLockUtilsInternal;
 
-public class PixysVersionDetailPreferenceController extends BasePreferenceController {
+public class NeutronVersionDetailPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "PixysVersionDialogCtrl";
+    private static final String TAG = "NeutronVersionDialogCtrl";
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
-    private static final String KEY_PIXYS_VERSION_PROP = "ro.pixys.display.version";
+    private static final String KEY_NEUTRON_VERSION_PROP = "ro.pixys.display.version";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
@@ -49,7 +49,7 @@ public class PixysVersionDetailPreferenceController extends BasePreferenceContro
     private RestrictedLockUtils.EnforcedAdmin mFunDisallowedAdmin;
     private boolean mFunDisallowedBySystem;
 
-    public PixysVersionDetailPreferenceController(Context context, String key) {
+    public NeutronVersionDetailPreferenceController(Context context, String key) {
         super(context, key);
         mUserManager = (UserManager) mContext.getSystemService(Context.USER_SERVICE);
         initializeAdminPermissions();
@@ -62,7 +62,7 @@ public class PixysVersionDetailPreferenceController extends BasePreferenceContro
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_PIXYS_VERSION_PROP,
+        return SystemProperties.get(KEY_NEUTRON_VERSION_PROP,
                 mContext.getString(R.string.unknown));
     }
 

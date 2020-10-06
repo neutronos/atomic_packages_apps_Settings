@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- PixysOS version preference -->
-    <string name="pixys_version">"NeutronOS version"</string>
+    <string name="neutron_version">"NeutronOS version"</string>
     <string name="build_date">"NeutronOS Build date"</string>
 
     <!-- Refresh rate -->
