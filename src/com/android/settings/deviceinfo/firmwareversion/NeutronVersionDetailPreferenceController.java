@@ -41,7 +41,7 @@ public class NeutronVersionDetailPreferenceController extends BasePreferenceCont
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
-    private static final String KEY_NEUTRON_VERSION_PROP = "ro.pixys.display.version";
+    private static final String KEY_NEUTRON_VERSION_PROP = "ro.neutron.display.version";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
